@@ -1,7 +1,7 @@
 //Задача №1
 
 var uchastok, a, b, ostatok;
-uchastok = 9*100;
+uchastok = 10*100; //исправил на 10 соток
 a = 15;
 b = 25;
 ostatok = uchastok%(a*b);
