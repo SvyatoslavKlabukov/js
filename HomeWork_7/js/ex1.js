@@ -63,3 +63,20 @@ var div = document.createElement('div');
 div.className = "alert alert-success";
 div.innerHTML = "<strong>Ура!</strong> Вы прочитали это важное сообщение.";
 document.body.appendChild(div);*/
+
+
+//Задача №3
+
+let red = document.getElementById("red");
+let yellow = document.getElementById("yellow");
+let green = document.getElementById("green");
+
+function svetofor(){
+	setTimeout("red.style.backgroundColor='red';yellow.style.backgroundColor='black';green.style.backgroundColor='black';", 2000);
+	setTimeout("red.style.backgroundColor='black';yellow.style.backgroundColor='yellow';",4000);
+	setTimeout("red.style.backgroundColor='black';yellow.style.backgroundColor='black';green.style.backgroundColor='green';",6000);
+	setTimeout("red.style.backgroundColor='black';yellow.style.backgroundColor='yellow';green.style.backgroundColor='black';",8000);
+};
+
+setInterval(svetofor, 8000);
+
